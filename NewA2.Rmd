@@ -1,0 +1,26 @@
+---
+title: "Assignment 2"
+author: "Joyce Lee"
+output: 
+bookdown::html_document2
+keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, message=FALSE}
+library(tidyverse)
+library(readr)
+library(kableExtra)
+library(ggplot2)
+library(lubridate)
+library(gridExtra)
+library(dplyr)
+```
+
+*Introduction*
+Yellowstone National Park has always been a popular attraction where it attracted approximately 4.02 million of visitors last year. Its tremendous popularity is inseparable from the well-known geysers as watching the eruptions of geysers has been treated as a "must" for visitors. Yet among nearly 500 geyers located in Yellowstone National Park, a number of geysers are much more notable among the others. Old Faithful Geyser occupies one of these places. Signified with its name, Old Faithful Geyser is "faithful" for the reason that its eruption time has been more predictable, with its steady regularity of eruptions.
+
+Nature is changing dynamically. As a part of nature, researches have been conducted to present changes of Old Faithful Geyser. In particular, Kieran and Esawi has revealed the fact that the waiting time between eruptions has gradually prolonged from year to year. The question that whether the duration of eruption would also be compressed due to extended waiting time will be delved in in this report.
