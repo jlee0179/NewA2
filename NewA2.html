@@ -393,11 +393,11 @@ glimpse(dat)</code></pre>
 ## $ waiting   &lt;dbl&gt; 79, 54, 74, 62, 85, 55, 88, 85, 51, 85, 54, 84, 78, 47, 83,…</code></pre>
 <pre class="r"><code>save(dat, file = &quot;dat&quot;)</code></pre>
 <pre class="r"><code>table1 &lt;- dat %&gt;%
-  knitr::kable(caption = &quot;Table 1 - Eruption Duration and Waiting Times&quot;)
+  knitr::kable(caption = &quot;Eruption Duration and Waiting Times&quot;)
 table1</code></pre>
 <table>
 <caption>
-<span id="tab:table1">Table 2.1: </span>Table 1 - Eruption Duration and Waiting Times
+<span id="tab:table1">Table 2.1: </span>Eruption Duration and Waiting Times
 </caption>
 <thead>
 <tr>
@@ -2600,16 +2600,16 @@ summary_table</code></pre>
 ##  Mean   :70.9  
 ##  3rd Qu.:82.0  
 ##  Max.   :96.0</code></pre>
-<p>Table 2 <a href="#fig:table2"><strong>??</strong></a>) and its relative boxplot Figure <a href="#fig:Figure1">2.1</a>) present the overall distribution of waiting time between eruptions. According to O’Hara and Esawi (2013), the mean eruption interval was 64 minutes in 1948. It turned out to be ~80 minutes in 1979 and ~92 minutes in 2011. The mean waiting time of “faithful” dataset is 70.9, which suggests this dataset might be obtained between 1948 and 1979.</p>
+<p>Table <a href="#tab:table2">2.2</a> and its relative boxplot Figure <a href="#fig:Figure1">2.1</a> present the overall distribution of waiting time between eruptions. According to O’Hara and Esawi (2013), the mean eruption interval was 64 minutes in 1948. It turned out to be ~80 minutes in 1979 and ~92 minutes in 2011. The mean waiting time of “faithful” dataset is 70.9, which suggests this dataset might be obtained between 1948 and 1979.</p>
 <pre class="r"><code>table2 &lt;- dat %&gt;% 
   dplyr::select(waiting) %&gt;%
   summary() %&gt;%
-  knitr::kable(caption = &quot;Table 2 - Summary Statistics for Waiting Time&quot;)
+  knitr::kable(caption = &quot;Summary Statistics for Waiting Time&quot;)
 
 table2</code></pre>
 <table>
 <caption>
-<span id="tab:table2">Table 2.2: </span>Table 2 - Summary Statistics for Waiting Time
+<span id="tab:table2">Table 2.2: </span>Summary Statistics for Waiting Time
 </caption>
 <thead>
 <tr>
