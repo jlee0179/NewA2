@@ -39,6 +39,7 @@ glimpse(dat)
 save(dat, file = "dat")
 ```
 
+
 ```{r table1}
 table1 <- dat %>%
   knitr::kable(caption = "Eruption Duration and Waiting Times")
@@ -64,6 +65,7 @@ table2 <- dat %>%
 table2
 ```
 
+
 ```{r Figure1, fig.cap="Boxplot of waiting time", include=TRUE }
 figure1 <- 
 dat %>%
@@ -75,7 +77,6 @@ figure1
 ```
 
 Although we assume this dataset as a quite early collection of data, it does not restrict the study of the relationship between eruption duration and waiting time.
-
 
 ```{r Figure2, fig.cap="Plot of waiting time against eruptions", include=TRUE}
 figure2 <- ggplot(dat) +
